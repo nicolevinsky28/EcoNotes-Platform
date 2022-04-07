@@ -1,0 +1,495 @@
+
+
+/*GENERAL*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Ubuntu", sans-serif;
+}
+:root{
+    --font: roboto ;
+    --verde: #70C573;
+    --verdeOscuro: #124329;
+    --amarillo:#EBD671;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+.donate{
+    position: fixed;
+    z-index: 9999999;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.donate:hover{
+    transition: 1s;
+    transform: rotate(720deg) scale(1.2);
+    
+}
+.cabezera{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--verdeOscuro);
+}
+.cabezera__visual{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cabezera__visualImg{
+    border-radius: 100px;
+    margin: 0.5em 1em 0.5em 2em;
+}
+.cabezera__visual h1{
+    font-size: 25px;
+    color: beige;  
+    margin: 0.7em 5em 0.5em 0.1em;
+}
+.cabezera__menu{
+    display: flex;
+
+}
+.cabezera__menu ul{
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--verdeOscuro);
+    border-radius: 5px;
+    margin: 0.5em 2em 0.5em 2em;
+}
+.cabezera__menu ul li{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+.cabezera__menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.cabezera__menu ul li a:hover{
+    color: beige;
+    transition: 0.1s;
+}
+footer {
+    background-color:#124329;
+    margin-top: 7em;
+    padding: 3em;
+  }
+  footer nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  footer nav ul {
+    list-style: none;
+  }
+  footer nav ul li {
+    padding: 1em 1em 1em 0em;
+  }
+  footer nav ul li a {
+    text-decoration: none;
+    color: bisque;
+  }
+  footer nav h4 {
+    color: white;
+  }
+
+
+/*INDEX.HTML*/
+.presentacion{
+    background-position: center;
+    background: url(../scr/media/img/presentacionFoto.jpg);
+    height: 100%;
+    background-size:     cover;                      /* <------ */
+   background-repeat:   no-repeat;
+   background-position: center center;
+   padding: 11em;
+   display: flex;
+   flex-direction: column;
+   border-bottom: 15px double #085F62;
+}
+.presentacion h2{
+    font-size: 70px;
+    color: #70C573;
+    margin-bottom: 1em;
+}
+.colorA{
+    color: #085F62;
+}
+.colorB{
+    color: #03A8E8;
+}
+.quienesSomos{
+    display: flex;
+    flex-direction: column;
+}
+.quienesSomos img{
+    border-radius: 10px;
+}
+.quienesSomos h3{
+    margin-bottom: 3em;
+    font-size: 30px;
+    color: black;
+}
+.quienesSomos p{
+    font-size: 25px;
+    padding-right: 1em;
+    color: #085F62;
+}
+.fotoText{
+    display: inline;
+}
+.photoText__content{
+    display: flex;
+    justify-content: flex-end;
+}
+.content__flex{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 8em;
+    margin-top: 4em;
+}
+.content__flex img{
+    margin-top: 5em;
+}
+.content__flex h2{
+    font-size: 70px;
+    padding-bottom: 1em;
+    color: #70C573;
+}
+.content__flex h3{
+    font-size: 40px;
+    color: #03A8E8;
+}
+.content__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.content__list ul{
+    margin-left: 1em;
+    margin-bottom: 8em;
+    font-size: 35px;
+}
+.content__list ul li{
+    list-style:square;
+    color: #085F62;
+    padding-top: 1.1em;
+}
+.cutSection{
+    text-align: center;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.cutSection h2{
+    padding-bottom: 0.5em;
+    font-size: 70px;
+    color: #085F62;
+}
+.cutSection h4{
+    padding-bottom: 3em;
+    font-size: 25px;
+    color: black;
+}
+.infoArbol {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 3em;
+    margin-left: 3em;
+    margin-top: 1.5em;
+  }
+  
+  .arboles, .carbono, .ingresos, .descarga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .arboles h2, .carbono h2, .ingresos h2, .descarga h2 {
+    margin-top: 1em;
+    padding: 0.5em;
+    border-bottom: 2px #70C573 solid;
+    color:#085F62;
+  }
+  .arboles p, .carbono p, .ingresos p, .descarga p {
+    margin-top: 0.5em;
+    font-size: 27px;
+    color: #70C573;
+  }
+
+
+/*NOSOTROS.HTML*/
+  .intro{
+      background: url(../scr/media/img/bannerNosotros.jpg);
+      height: 100%;
+      background-size:     cover;                      /* <------ */
+     background-repeat:   no-repeat;
+     background-position: center center;
+     padding: 4em;
+  }
+  .intro__nosotros{
+    margin: 4em;
+    text-align: center;
+    background-color:#124329b6;
+}
+  .intro__nosotros h2{
+      padding: 3em 3em 1em 3em;
+      font-size: 40px;
+      color:#fcfcfc;
+}
+.intro__nosotros p{
+    font-size: 30px;
+    padding-bottom: 4em;
+    color: antiquewhite;
+    text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.divisiones{
+    text-align: center;
+}
+.divisiones h2{
+    padding-top: 2.5em;
+    font-size: 50px;
+    color: #03A8E8;
+}
+.spanDivide{
+    color: #085F62;
+}
+.spanName{
+    color: #70C573;
+}
+.contentLogos{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 2em 4em 2em 4em;
+    flex-wrap: wrap;
+}
+.ramas {
+    display:inline-block;
+    position:relative;
+  }
+  
+  .ramas > div {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    padding:10px;
+    margin:0;
+    color: #124329;
+  }
+  
+  .ramas__opacar {
+      background-color: white;
+  }
+  .ramas__opacar:hover {
+    opacity: 0.07;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+  }
+
+
+  .ramas {
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;}
+
+.historia{
+    margin: 3em;
+    display: flex;
+}
+.historia__content h2{
+    padding-top: 2.5em;
+    font-size: 60px;
+    border-bottom: 10px double #085F62;
+    color: #70C573;
+}
+.content__text{
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-between;
+}
+.content__text p{
+    padding-top: 10px;
+    font-size: 30px;
+}
+.logoViejo {
+    display:inline-block;
+    position:relative;
+  }
+.logoViejo > div {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    padding:10px;
+    margin:0;
+    font-size: 25px;
+    color: #124329;
+  }
+  .ramas__opacar {
+      background-color: white;
+  }
+  .ramas__opacar:hover {
+    opacity: 0.07;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+  }
+
+/*NEWS.HTML*/
+
+.bannerNews{
+    text-align: center;
+    padding: 4em;
+    border-bottom: #085F62 double 1em;
+}
+.bannerNews h2{
+    padding-top: 1em;
+    font-size: 40px;
+    color: #03A8E8;
+}
+.bannerNews h3{
+
+    color: #70C573;
+}
+
+.noticias{
+    margin: 2em 5em 2em 5em;
+}
+.newContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 4em;
+}
+.newContent{
+    padding-left: 2em;
+}
+.titleNew{
+    padding-bottom: 1em;
+}
+.botonera{
+    margin-top: 1em;
+}
+.botonera li{
+    display: inline;
+    padding: 1em;
+
+}
+.botonera li a{
+    text-decoration: none;
+    color: var(--verde);
+    border-bottom: 2px solid var(--verde);
+}
+
+/*CAMPAÑAS.HTML*/
+.videoPrincipal{
+    display: flex;
+    justify-content: space-around;
+    margin: 3em 3em 10em 3em;
+}
+.videoCampaña{
+width: 200vh;
+margin-right: 2em;
+}
+
+.portadaCampania{
+    margin: 3em 1em 1em 1em;
+    display: flex;
+    justify-content: space-around;
+}
+.portadaCampania h2{
+    margin-top: 1em;
+    font-size: 60px;
+}
+.pUno{
+    color: #EA7128;
+}
+.pDos{
+    color: #45737E;
+}
+.pTres{
+    color: #FFC811;
+}
+.pCuatro{
+    color: #3AA4A4;
+}
+
+/*STORE.HTML*/
+
+.bannerStore{
+    text-align: center;
+    padding: 4em;
+    border-bottom: #085F62 double 1em;
+}
+.bannerStore h2{
+    padding-top: 1em;
+    font-size: 40px;
+    color: #03A8E8;
+}
+.bannerStore h3{
+
+    color: #70C573;
+}
+
+.cardProduct{
+    width: 300px;
+    border: 5px black solid;
+    padding: 3em;
+    display: inline-block;
+    margin: 2em;
+}
+
+.cardProduct__image{
+    width: 100%;
+}
+
+.cardProduct__des{
+    text-align: justify;
+    line-height: 20px;
+}
+
+.cardProduct__price{
+    margin-top: 15px;
+}
+
+.cardProduct__text{
+    margin-top: 10px;
+    margin-bottom: 5em;
+}
+
+.cardProduct__button{
+    text-decoration: none;
+    font-size: 25px;
+    background-color: #085F62;
+    color: #fcfcfc;
+    padding: 1em;
+    border-radius: 15px;
+}
+.cardProduct__button:hover{
+    background-color: #70C573;
+    color: #085F62;
+    transition: 0.5s;
+}
+
+
+
+/*MEDIA QUERY*/
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  } 
