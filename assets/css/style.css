@@ -223,6 +223,10 @@ footer {
 
 
 /*NOSOTROS.HTML*/
+.responsiveAlert{
+    display: none;
+}
+
   .intro{
       background: url(../scr/media/img/bannerNosotros.jpg);
       height: 100%;
@@ -484,12 +488,428 @@ margin-right: 2em;
     transition: 0.5s;
 }
 
+.gridContenedor{
+    color: #fcfcfc;
+    display: grid;
+    grid-template-areas: "dona"
+                         "socio"
+                         "app";}
+
+
+.gridItemDona{
+    grid-area: dona;
+    display: flex;
+    flex-direction: row;
+    background-color: #03A8E8;
+}
+.contentDona__text{
+    width: 50%;
+
+}
+.gridItemAsociate{
+    grid-area: socio;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #085F62;
+
+}
+.contentSocio__text{
+    width: 50%;}
+
+.gridItemApp{
+    grid-area: app;
+    display: flex;
+    flex-direction: row;
+    background-color: #70C573;
+
+}
+.contentApp__text{
+    width: 50%;}
+
+.ilusracionAyuda{
+        height: max-content;
+    }
+
+.CTA{
+    text-align: center;
+    padding: 2em;
+}
+.CTA p{
+    text-align: justify;
+    padding-bottom: 2em;
+    font-size: 20px;
+}
+.CTA h2{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 30px;
+}
+.CTA a{
+    text-decoration: none;
+    font-size: 25px;
+    background-color: #124329;
+    color: #fcfcfc;
+    padding: 0.5em;
+    border-radius: 15px;
+}
 
 
 /*MEDIA QUERY*/
 
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
+
+    /*General*/
+    .donate{
+        display: none;
     }
+    .cabezera{
+        text-align: center;
+        flex-direction: column;
+    }
+    .cabezera__visual{
+        justify-content: center;
+    }
+    
+    .cabezera__visualImg{
+        margin: 0.5em 1em 0.5em 2em;
+        height: 35px;
+        width: 35px;
+    }
+    .cabezera__visual h1{
+        font-size: 25px;
+        color: beige;  
+        margin: 0.7em 0.1em 0.5em 0.1em;
+    }
+    .cabezera__menu{
+        display: flex;
+    
+    }
+    .cabezera__menu ul{
+        justify-content: center;
+        margin: 0.5em ;
+        flex-wrap: wrap;
+    }
+
+    .cabezera__menu ul li a{
+        font-size: 20px;
+    }
+    .logoFooter{
+        display: none;
+    }
+    footer {
+        background-color:#124329;
+        margin-top: 1em;
+        padding: 3em 1em 1em 1em;
+      }
+      footer nav {
+        display: flex;
+        justify-content: space-around;
+      }
+      footer nav ul {
+        list-style: none;
+        text-align: center;
+      }
+      footer nav ul li {
+        padding: 0.5em;
+      }
+
+      /*Index.HTML*/
+      .presentacion{
+        background-position: center;
+        background: url(../scr/media/img/presentacionFoto.jpg);
+        height: 100%;
+        background-size:     cover;                      /* <------ */
+       background-repeat:   no-repeat;
+       background-position: center center;
+       padding: 1em;
+       display: flex;
+       flex-direction: column;
+       border-bottom: 15px double #085F62;
+    }
+    .presentacion h2{
+        padding-top: 2em;
+        font-size: 60px;
+        margin-bottom: 1em;
+    }
+    .quienesSomos{
+        display: flex;
+        flex-direction: column;
+    }
+    .quienesSomos img{
+        display: none;
+    }
+    .quienesSomos h3{
+        margin-bottom: 3em;
+        font-size: 30px;
+        background-color: #ffffff91;
+        color: #124329;
+        padding: 0.5em;
+    }
+    .photoText__content{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .content__flex{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-left: 1em;
+        margin-top: 4em;
+        align-items: center;
+    }
+    .content__flex img{
+        margin-top: 5em;
+        height: 200px;
+        width: max-content;
+        padding-bottom: 1em;
+    }
+    .content__flex h2{
+        font-size: 50px;
+        padding-bottom: 1em;
+    }
+    .content__flex h3{
+        font-size: 30px;
+    }
+    .content__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .content__list ul{
+        margin-left: 1em;
+        margin-bottom: 8em;
+        font-size: 25px;
+    }
+    .content__list ul li{
+        list-style:square;
+        color: #085F62;
+        padding-top: 1.1em;
+    }
+    .cutSection{
+        text-align: center;
+        margin-bottom: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+    .cutSection h2{
+        padding-bottom: 0.5em;
+        font-size: 70px;
+        color: #085F62;
+    }
+    .cutSection h4{
+        padding-bottom: 3em;
+        font-size: 25px;
+        color: black;
+    }
+    .infoArbol {
+        flex-direction: column;
+        margin-right: 1em;
+        margin-left: 1em;
+        margin-top: 1.5em;
+      }
+      
+      .arboles, .carbono, .ingresos, .descarga {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .arboles h2, .carbono h2, .ingresos h2, .descarga h2 {
+        margin-top: 1em;
+        padding: 0.5em;
+        border-bottom: 2px #70C573 solid;
+        color:#085F62;
+      }
+      .arboles p, .carbono p, .ingresos p, .descarga p {
+        margin-top: 0.5em;
+        font-size: 27px;
+        color: #70C573;
+        padding-bottom: 2em;
+      }
+
+      /*NOSOTROS.HTML*/
+
+      .responsiveAlert{
+        padding-top: 3em;
+        display:flex ;
+        font-size: 20px;
+        color: #085F62;
+
+    }
+
+  .intro{
+    background: url(../scr/media/img/bannerNosotrosResponsive.jpg);
+    height: 100%;
+    background-size:     cover;                      /* <------ */
+   background-repeat:   no-repeat;
+   background-position: center;
+   padding: 1em;
+}
+.intro__nosotros{
+  margin: 3em 0.5em 3em 0.5em;
+}
+.intro__nosotros h2{
+    padding:1em;
+    font-size: 40px;
+    color:#fcfcfc;
+}
+.intro__nosotros p{
+  font-size: 25px;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+}
+.divisiones h2{
+  padding-top: 2.5em;
+  font-size: 50px;
+}
+
+
+.ramas > div {
+    font-size: 15px;
+}
+
+.historia{
+  margin: 1em;
+  display: flex;
+}
+.historia__content h2{
+  padding-top: 2.5em;
+  font-size: 50px;
+  border-bottom: 10px double #085F62;
+  color: #70C573;
+  display: flex;
+}
+.content__text{
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.content__text p{
+  padding-top: 10px;
+  font-size: 20px;
+  padding: 2em 1em 2em 1em;
+}
+
+
+/*STORE.HTML*/
+
+.bannerStore{
+    padding: 1em;
+}
+.cardProduct{
+    width: 300px;
+    border: 5px black solid;
+    padding: 1em 1em 3em 1em;
+    display: inline-block;
+    margin: 2em 1em 2em 1em;
+    align-items: center;
+}
+.productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+/*CAMPAÑAS.HTML*/
+.videoPrincipal{
+    flex-direction: column;
+    margin: 3em 1em 10em 1em;
+    align-items: center;
+}
+.videoCampaña{
+width: max-content;
+margin-right: 0em;
+}
+.video__text{
+    margin-top: 3em;
+}
+
+.portadaCampania{
+    margin: 3em 1em 1em 1em;
+    flex-direction: column;
+    align-items: center;
+}
+.portadaCampania h2{
+    margin-top: 1em;
+    font-size: 40px;
+}
+.portadaCampania img{
+    width: 300px;
+    height: 300px;
+}
+
+/*NEWS.HTML*/
+
+.bannerNews{
+    padding: 1em;
+}
+
+.noticias{
+    margin: 2em 1em 2em 1em;
+}
+.newContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    padding-bottom: 2em;
+    border-bottom: 10px #70C573 double;
+}
+.newContainer img{
+    border-radius: 15px;
+    width: max-content;
+    margin-bottom: 2em;
+}
+.newContent{
+    padding-left: 0em;
+}
+.titleNew{
+    padding-bottom: 1em;
+}
+.botonera{
+    margin-top: 1em;
+}
+.botonera li{
+    display: inline;
+    padding: 1em;
+}
+.botonera li a{
+    text-decoration: none;
+    color: var(--verde);
+    border-bottom: 2px solid var(--verde);
+}
+
+
+
+    /*Ayudanos.HTML*/
+    .gridContenedor{
+        text-align: center;
+    }
+    .CTA{
+        padding: 0px;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+    .CTA p{
+        text-align:center;
+        padding: 1em 1em 2em 1em;
+    }
+    .CTA a{
+        margin: 2em;
+    }
+    .responsiveGrid{
+        flex-direction: column;  
+        text-align: center;
+        padding: 1em 1em 3em 1em;
+        align-items: center;
+    }
+    .ilusracionAyuda{
+        width: 200px;
+        height: 200px;
+    }
+
   } 
