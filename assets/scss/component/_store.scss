@@ -1,0 +1,57 @@
+/*STORE.HTML*/
+
+.bannerStore{
+    text-align: center;
+    padding: 4em;
+    @include border( #085F62 double 1em);
+
+    h2{
+        padding-top: 1em;
+        font-size: 40px;
+        color: $celeste;
+    }
+
+    h3{
+
+        color: $verdeClaro;
+    }
+}
+.cardProduct{
+    width: 300px;
+    border: 5px black solid;
+    padding: 3em;
+    display: inline-block;
+    margin: 2em;
+}
+
+.cardProduct__image{
+    width: 100%;
+}
+.cardProduct__des{
+    text-align: justify;
+    line-height: 20px;
+}
+
+.cardProduct__price{
+    margin-top: 15px;
+}
+
+.cardProduct__text{
+    margin-top: 10px;
+    margin-bottom: 5em;
+}
+
+.cardProduct__button{
+    text-decoration: none;
+    font-size: 25px;
+    background-color: $teal;
+    color: #fcfcfc;
+    padding: 1em;
+    border-radius: 15px;
+
+    &:hover{
+        background-color: $verdeClaro;
+        color: $teal;
+        transition: 0.5s;
+    }
+}

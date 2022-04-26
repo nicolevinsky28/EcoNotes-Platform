@@ -1,0 +1,45 @@
+.bannerNews{
+    text-align: center;
+    padding: 4em;
+    @include border(#085F62 double 1em);
+
+    h2{
+        padding-top: 1em;
+        font-size: 40px;
+        color: $celeste;
+    }
+
+    h3{
+
+        color: $verdeClaro;
+    }
+    
+}
+.noticias{
+    margin: 2em 5em 2em 5em;
+}
+.newContainer{
+    @extend %flexRow;
+    justify-content: space-around;
+    margin-top: 4em;
+}
+.newContent{
+    padding-left: 2em;
+}
+.titleNew{
+    padding-bottom: 1em;
+}
+.botonera{
+    margin-top: 1em;
+
+    li{
+        display: inline;
+        padding: 1em;
+
+        a{
+            text-decoration: none;
+            color: $verdeClaro;
+            @include border(2px solid $verdeClaro);
+        }
+    }
+}

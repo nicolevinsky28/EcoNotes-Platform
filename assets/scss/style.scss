@@ -1,0 +1,126 @@
+@import "base/extends";
+@import "base/mixins";
+@import "base/colorsYfonts";
+@import "component/index";
+@import "component/nosotros";
+@import "component/news";
+@import "component/campañas";
+@import "component/store";
+@import "component/ayudanos";
+
+
+
+
+/*GENERAL CONFIGS*/
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Ubuntu", sans-serif;
+}
+:root{
+    --font: roboto ;
+    --verde: #70C573;
+    --verdeOscuro: #124329;
+    --amarillo:#EBD671;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+.donate{
+    position: fixed;
+    z-index: 9999999;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+
+    &:hover{
+        transition: 1s;
+        transform: rotate(720deg) scale(1.2);
+    }
+}
+.cabezera{
+    text-align: center;
+    @extend %flexRow;
+    justify-content: space-between;
+    background-color: $verdeOscuro;
+}
+.cabezera__visual{
+    @extend %flexRow;
+    justify-content: flex-start;
+
+    h1{
+        font-size: 25px;
+        color: $blanco;  
+        margin: 0.7em 5em 0.5em 0.1em;
+    }
+}
+
+.cabezera__visualImg{
+    border-radius: 100px;
+    margin: 0.5em 1em 0.5em 2em;
+
+}
+
+.cabezera__menu{
+    @extend %flexRow;
+
+    ul{
+        @extend %flexRow;
+        justify-content: flex-end;
+        background-color: var(--verdeOscuro);
+        border-radius: 5px;
+        margin: 0.5em 2em 0.5em 2em;
+
+        li{
+            @extend %flexRow;
+            justify-content: space-evenly;
+            padding: 1em;
+
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+
+                &:hover{
+                    color: $blanco;
+                    transition: 0.1s;
+                }
+            }
+        }
+    }
+
+
+}
+
+footer {
+    background-color:$verdeOscuro;
+    margin-top: 7em;
+    padding: 3em;
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+
+        h4 {
+            color: white;
+          }
+
+        ul {
+            list-style: none;
+
+            li {
+                padding: 1em 1em 1em 0em;
+
+                a {
+                    text-decoration: none;
+                    color: $blanco;
+                  }
+              }
+          }
+      }
+  }
+
+  @import "base/mediaQuery";

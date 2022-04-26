@@ -1,0 +1,19 @@
+{
+  "name": "nicolas-levinsky-fullresponsive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolevinsky28/EcoNotes-Platform.git"
+  },
+  "author": "nicolas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolevinsky28/EcoNotes-Platform/issues"
+  },
+  "homepage": "https://github.com/nicolevinsky28/EcoNotes-Platform#readme"
+}

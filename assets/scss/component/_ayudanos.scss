@@ -1,0 +1,68 @@
+.gridContenedor{
+    color: #fcfcfc;
+    display: grid;
+    grid-template-areas: "dona"
+                         "socio"
+                         "app";}
+
+.gridItemDona{
+    grid-area: dona;
+    @extend %flexRow;
+    background-color: $verdeClaro;
+}
+.contentDona__text{
+    width: 50%;
+
+}
+.gridItemAsociate{
+    grid-area: socio;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: $teal;
+
+}
+.contentSocio__text{
+    width: 50%;}
+
+.gridItemApp{
+    grid-area: app;
+    @extend %flexRow;
+    background-color: $celeste;
+}
+.contentApp__text{
+    width: 50%;}
+
+.ilusracionAyuda{
+        height: max-content;
+    }
+
+.CTA{
+    text-align: center;
+    padding: 2em;
+    p{
+        text-align: justify;
+        padding-bottom: 4em;
+        font-size: 30px;
+    }
+
+    h2{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 60px;
+    }
+
+    a{
+        text-decoration: none;
+        font-size: 30px;
+        background-color: #2B475E;
+        color: #FFD43D;
+        padding: 0.5em;
+        border-radius: 15px;
+
+        &:hover{
+            background-color: #182c3b;
+            color: #EBD671;
+            transition: 0.5s;
+        }
+    }
+}

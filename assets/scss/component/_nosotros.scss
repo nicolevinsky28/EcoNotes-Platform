@@ -1,0 +1,134 @@
+.responsiveAlert{
+    display: none;
+}
+.intro{
+    background: url(../scr/media/img/bannerNosotros.jpg);
+    height: 100%;
+    background-size:     cover;                      /* <------ */
+   background-repeat:   no-repeat;
+   background-position: center center;
+   padding: 4em;
+}
+
+.intro__nosotros{
+    margin: 4em;
+    text-align: center;
+    background-color:$verdeOscuro;
+
+    h2{
+        padding: 3em 3em 1em 3em;
+        font-size: 40px;
+        color:#fcfcfc;
+  }
+  p{
+    font-size: 30px;
+    padding-bottom: 4em;
+    color: antiquewhite;
+    text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+}
+.divisiones{
+    text-align: center;
+    h2{
+        padding-top: 2.5em;
+        font-size: 50px;
+        color: $celeste;
+    }
+}
+.spanDivide{
+    color: $verdeOscuro;
+}
+.spanName{
+    color: $verdeClaro;
+}
+.contentLogos{
+    @extend %flexRow;
+    justify-content: space-around;
+    margin: 2em 4em 2em 4em;
+    flex-wrap: wrap;
+}
+.ramas {
+    display:inline-block;
+    position:relative;
+  }
+  .ramas > div {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    padding:10px;
+    margin:0;
+    color: $verdeOscuro;
+  }
+  
+  .ramas__opacar {
+      background-color: white;
+      &:hover{
+        opacity: 0.07;
+        -webkit-transition: opacity 500ms;
+        -moz-transition: opacity 500ms;
+        -o-transition: opacity 500ms;
+        -ms-transition: opacity 500ms;
+        transition: opacity 500ms;
+      }
+  }
+
+.ramas {
+    margin: 2em auto;
+    @extend %flexColumn;}
+
+.historia{
+    margin: 3em;
+    @extend %flexRow;
+}
+
+.historia__content {
+
+    h2{
+        padding-top: 2.5em;
+        font-size: 60px;
+        border-bottom: 10px double $teal;
+        color: $verdeClaro;
+    }
+}
+.content__text{
+    margin-top: 3em;
+    @extend %flexRow;
+    justify-content: space-between;
+
+    p{
+        padding-top: 10px;
+        font-size: 30px;
+    }
+}
+
+.logoViejo {
+    display:inline-block;
+    position:relative;
+  }
+.logoViejo > div {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    padding:10px;
+    margin:0;
+    font-size: 25px;
+    color: $verdeOscuro;
+  }
+
+  .ramas__opacar {
+    background-color: white;
+
+    &::hover {
+        opacity: 0.07;
+        -webkit-transition: opacity 500ms;
+        -moz-transition: opacity 500ms;
+        -o-transition: opacity 500ms;
+        -ms-transition: opacity 500ms;
+        transition: opacity 500ms;
+      }
+}
+  

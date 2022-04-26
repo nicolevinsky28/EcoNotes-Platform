@@ -1,0 +1,31 @@
+/*CAMPAÑAS.HTML*/
+.videoPrincipal{
+    @extend %flexRow;
+    justify-content: space-around;
+    margin: 3em 3em 10em 3em;
+}
+.videoCampaña{
+    width: 200vh;
+    margin-right: 2em;
+    }
+.portadaCampania{
+    margin: 3em 1em 1em 1em;
+    @extend %flexRow;
+    justify-content: space-around;
+    h2{
+        margin-top: 1em;
+        font-size: 60px;
+    }
+}
+.pUno{
+    color: #EA7128;
+}
+.pDos{
+    color: #45737E;
+}
+.pTres{
+    color: #FFC811;
+}
+.pCuatro{
+    color: #3AA4A4;
+}
