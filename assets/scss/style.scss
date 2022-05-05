@@ -1,12 +1,14 @@
 @import "base/extends";
 @import "base/mixins";
 @import "base/colorsYfonts";
+@import "base/maps";
 @import "component/index";
 @import "component/nosotros";
 @import "component/news";
 @import "component/campañas";
 @import "component/store";
 @import "component/ayudanos";
+@import "component/socios";
 
 
 
@@ -70,7 +72,7 @@ body{
     ul{
         @extend %flexRow;
         justify-content: flex-end;
-        background-color: var(--verdeOscuro);
+        background-color: map-get($colorsMenu, fondoMenu);
         border-radius: 5px;
         margin: 0.5em 2em 0.5em 2em;
 
@@ -81,7 +83,7 @@ body{
 
             a{
                 text-decoration: none;
-                color: white;
+                color: map-get($colorsMenu, colorTXT);
                 font-size: 20px;
 
                 &:hover{

@@ -22,6 +22,19 @@
     @extend %flexRow;
     justify-content: space-around;
     margin-top: 4em;
+    border: 8px $teal solid;
+    padding: 0.5em;
+    background-color: lighten($celeste, 51%);
+
+    img{
+        border: $verdeClaro 8px solid;
+        border-radius: 5px;
+    }
+
+    &:hover{
+        transform: scale(1.03);
+        transition: 0.5s;
+    }
 }
 .newContent{
     padding-left: 2em;
@@ -41,5 +54,9 @@
             color: $verdeClaro;
             @include border(2px solid $verdeClaro);
         }
+    }
+    .fecha{
+        margin: 1em;
+        color: $verdeOscuro;
     }
 }

@@ -3,6 +3,15 @@
     @extend %flexRow;
     justify-content: space-around;
     margin: 3em 3em 10em 3em;
+
+    h2{
+        font-size: 40px;
+        color: $teal;
+        padding-bottom: 1em;
+    }
+    p{
+        font-size: 20px;
+    }
 }
 .videoCampaña{
     width: 200vh;

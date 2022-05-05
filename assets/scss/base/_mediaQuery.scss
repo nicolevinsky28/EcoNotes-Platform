@@ -14,6 +14,12 @@
     }
     .cabezera__visual{
         justify-content: center;
+
+        h1{
+            font-size: 25px;
+            color: $blanco;  
+            margin: 0.7em 0.1em 0.5em 0.1em;
+        }
     }
     
     .cabezera__visualImg{
@@ -21,24 +27,23 @@
         height: 35px;
         width: 35px;
     }
-    .cabezera__visual h1{
-        font-size: 25px;
-        color: beige;  
-        margin: 0.7em 0.1em 0.5em 0.1em;
-    }
     .cabezera__menu{
         display: flex;
-    
-    }
-    .cabezera__menu ul{
-        justify-content: center;
-        margin: 0.5em ;
-        flex-wrap: wrap;
+
+        ul{
+            justify-content: center;
+            margin: 0.5em ;
+            flex-wrap: wrap;
+
+            li{
+
+                a{
+                    font-size: 20px;
+                }
+            }
+        }
     }
 
-    .cabezera__menu ul li a{
-        font-size: 20px;
-    }
     .logoFooter{
         display: none;
     }
@@ -46,18 +51,23 @@
         background-color:#124329;
         margin-top: 1em;
         padding: 3em 1em 1em 1em;
-      }
-      footer nav {
-        display: flex;
-        justify-content: space-around;
-      }
-      footer nav ul {
-        list-style: none;
-        text-align: center;
-      }
-      footer nav ul li {
-        padding: 0.5em;
-      }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+
+            ul {
+                list-style: none;
+                text-align: center;
+
+                li {
+                    padding: 0.5em;
+                  }
+              }
+            
+          }
+    }
+
 }
 
 
@@ -75,26 +85,29 @@
    display: flex;
    flex-direction: column;
    border-bottom: 15px double #085F62;
-}
-.presentacion h2{
+
+   h2{
     padding-top: 2em;
     font-size: 50px;
     margin-bottom: 1em;
     height: 100%;
 }
+}
 .quienesSomos{
     display: flex;
     flex-direction: column;
-}
-.quienesSomos img{
-    display: none;
-}
-.quienesSomos h3{
-    margin-bottom: 3em;
-    font-size: 30px;
-    background-color: #ffffff91;
-    color: #124329;
-    padding: 0.5em;
+
+    img{
+        display: none;
+    }
+
+    h3{
+        margin-bottom: 3em;
+        font-size: 30px;
+        background-color: #ffffff91;
+        color: #124329;
+        padding: 0.5em;
+    }
 }
 .photoText__content{
     display: flex;
@@ -108,51 +121,61 @@
     margin-left: 1em;
     margin-top: 4em;
     align-items: center;
+
+    img{
+        margin-top: 5em;
+        height: 200px;
+        width: max-content;
+        padding-bottom: 1em;
+    }
+
+    h2{
+        font-size: 50px;
+        padding-bottom: 1em;
+    }
+
+    h3{
+        font-size: 30px;
+    }
 }
-.content__flex img{
-    margin-top: 5em;
-    height: 200px;
-    width: max-content;
-    padding-bottom: 1em;
-}
-.content__flex h2{
-    font-size: 50px;
-    padding-bottom: 1em;
-}
-.content__flex h3{
-    font-size: 30px;
-}
+
 .content__list{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    ul{
+        margin-left: 1em;
+        margin-bottom: 8em;
+        font-size: 25px;
+
+        li{
+            list-style:square;
+            color: #085F62;
+            padding-top: 1.1em;
+        }
+    }
 }
-.content__list ul{
-    margin-left: 1em;
-    margin-bottom: 8em;
-    font-size: 25px;
-}
-.content__list ul li{
-    list-style:square;
-    color: #085F62;
-    padding-top: 1.1em;
-}
+
 .cutSection{
     text-align: center;
     margin-bottom: 2em;
     display: flex;
     flex-direction: column;
+
+    h2{
+        padding-bottom: 0.5em;
+        font-size: 70px;
+        color: #085F62;
+    }
+
+    h4{
+        padding-bottom: 3em;
+        font-size: 25px;
+        color: black;
+    }
 }
-.cutSection h2{
-    padding-bottom: 0.5em;
-    font-size: 70px;
-    color: #085F62;
-}
-.cutSection h4{
-    padding-bottom: 3em;
-    font-size: 25px;
-    color: black;
-}
+
 .infoArbol {
     flex-direction: column;
     margin-right: 1em;
@@ -178,6 +201,10 @@
     padding-bottom: 2em;
   }
 
+  .grid-gallery{
+      margin: 3em 1em 3em 1em;
+  }
+
   /*NOSOTROS.HTML*/
 
   .responsiveAlert{
@@ -198,18 +225,21 @@ padding: 1em;
 }
 .intro__nosotros{
 margin: 3em 0.5em 3em 0.5em;
+
+h2{
+    padding:1em;
+    font-size: 40px;
+    color:#fcfcfc;
+    }
+
+    p{
+        font-size: 25px;
+        padding-left: 1em;
+        padding-right: 1em;
+        text-align: center;
+        }
 }
-.intro__nosotros h2{
-padding:1em;
-font-size: 40px;
-color:#fcfcfc;
-}
-.intro__nosotros p{
-font-size: 25px;
-padding-left: 1em;
-padding-right: 1em;
-text-align: center;
-}
+
 .divisiones h2{
 padding-top: 2.5em;
 font-size: 50px;
@@ -237,11 +267,12 @@ display: flex;
 justify-content: space-between;
 flex-direction: column;
 align-items: center;
-}
-.content__text p{
-padding-top: 10px;
-font-size: 20px;
-padding: 2em 1em 2em 1em;
+
+p{
+    padding-top: 10px;
+    font-size: 20px;
+    padding: 2em 1em 2em 1em;
+    }
 }
 
 
@@ -252,7 +283,7 @@ padding: 1em;
 }
 .cardProduct{
 width: 300px;
-border: 5px black solid;
+border: 5px teal solid;
 padding: 1em 1em 3em 1em;
 display: inline-block;
 margin: 2em 1em 2em 1em;
@@ -268,10 +299,21 @@ align-items: center;
 flex-direction: column;
 margin: 3em 1em 10em 1em;
 align-items: center;
+text-align: center;
+
+h2{
+    font-size: 30px;
+    padding: 1em;
+}
+p{
+    text-align: justify;
+    padding: 0em 1em 1em 1em;
+}
 }
 .videoCampaña{
 width: max-content;
 margin-right: 0em;
+
 }
 .video__text{
 margin-top: 3em;
@@ -281,14 +323,16 @@ margin-top: 3em;
 margin: 3em 1em 1em 1em;
 flex-direction: column;
 align-items: center;
-}
-.portadaCampania h2{
-margin-top: 1em;
-font-size: 40px;
-}
-.portadaCampania img{
-width: 300px;
-height: 300px;
+
+h2{
+    margin-top: 1em;
+    font-size: 40px;
+    }
+
+    img{
+        width: 300px;
+        height: 300px;
+        }
 }
 
 /*NEWS.HTML*/
@@ -309,11 +353,12 @@ margin-top: 4em;
 margin-bottom: 4em;
 padding-bottom: 2em;
 border-bottom: 10px #70C573 double;
-}
-.newContainer img{
-border-radius: 15px;
-width: max-content;
-margin-bottom: 2em;
+
+img{
+    border-radius: 15px;
+    width: max-content;
+    margin-bottom: 2em;
+    }
 }
 .newContent{
 padding-left: 0em;
@@ -327,11 +372,19 @@ margin-top: 1em;
 .botonera li{
 display: inline;
 padding: 1em;
+
+.fecha{
+    padding-top: 2em;
 }
-.botonera li a{
-text-decoration: none;
+ a{
+    text-decoration: none;
 color: var(--verde);
-border-bottom: 2px solid var(--verde);
+border-bottom: 2px solid var(--verde); 
+ }
+}
+
+.fecha{
+    padding-top: 3em;
 }
       /*Ayudanos.HTML*/
       .gridContenedor{
