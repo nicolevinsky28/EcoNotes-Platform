@@ -1,7 +1,7 @@
 {
-  "name": "nicolas-levinsky-fullresponsive",
-  "version": "1.0.0",
-  "description": "",
+  "name": "econotes-web",
+  "version": "1.4.0",
+  "description": "Pagina oficial de la ONG de Eco Notes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

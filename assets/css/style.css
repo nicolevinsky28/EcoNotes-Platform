@@ -416,6 +416,47 @@
 }
 
 /*CAMPAÑAS.HTML*/
+.evento {
+  background: url(../scr/media/img/bannerCampaña.jpg);
+  height: 100%;
+  background-size: cover;
+  /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 4em;
+  margin-bottom: 2em;
+}
+.evento .eventoContent {
+  text-align: center;
+}
+.evento .eventoContent h2 {
+  font-size: 70px;
+  padding: 1em 0em 1em 0em;
+  color: #043133;
+}
+.evento .eventoContent h4 {
+  text-align: justify;
+  font-size: 40px;
+  color: beige;
+  background-color: #12432994;
+  padding: 1em;
+}
+.evento .eventoContent a {
+  text-decoration: none;
+  font-size: 30px;
+  background-color: #03A8E8;
+  padding: 0.5em;
+  color: #043133;
+}
+.evento .eventoContent a:hover {
+  background-color: #043133;
+  color: #03A8E8;
+  transition: 0.5s;
+}
+.evento .spacemargin {
+  padding: 1em 0em 4em 0em;
+}
+
 .videoPrincipal {
   justify-content: space-around;
   margin: 3em 3em 10em 3em;
@@ -457,6 +498,17 @@
 
 .pCuatro {
   color: #3AA4A4;
+}
+
+.cel {
+  display: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #70C573;
 }
 
 /*STORE.HTML*/
@@ -1083,6 +1135,16 @@ footer nav ul li a {
   }
 
   /*CAMPAÑAS.HTML*/
+  .evento {
+    padding: 1em 1em 3em 1em;
+  }
+  .evento .eventoContent h2 {
+    font-size: 50px;
+  }
+  .evento .eventoContent h4 {
+    font-size: 25px;
+  }
+
   .videoPrincipal {
     flex-direction: column;
     margin: 3em 1em 10em 1em;
@@ -1119,6 +1181,10 @@ footer nav ul li a {
   .portadaCampania img {
     width: 300px;
     height: 300px;
+  }
+
+  .cel {
+    display: block;
   }
 
   /*NEWS.HTML*/
@@ -1250,6 +1316,11 @@ footer nav ul li a {
     width: 200px;
     height: 200px;
     border-radius: 15px;
+  }
+}
+@media only screen and (max-width: 601px) {
+  .desk {
+    display: none;
   }
 }
 
