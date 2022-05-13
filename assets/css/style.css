@@ -71,6 +71,9 @@
   margin-left: 8em;
   margin-top: 4em;
 }
+.content__flex video {
+  margin: 2em;
+}
 .content__flex img {
   margin-top: 5em;
 }
@@ -943,7 +946,7 @@ footer nav ul li a {
     display: flex;
     flex-direction: column;
   }
-  .quienesSomos img {
+  .quienesSomos video {
     display: none;
   }
   .quienesSomos h3 {
