@@ -17,6 +17,427 @@
     saturate
 }
 */
+.fondos {
+  background-color: #ddf1de;
+}
+
+.error {
+  color: #124329;
+  margin-top: 7em;
+  text-align: center;
+}
+.error h2 {
+  font-size: 50px;
+}
+.error h3 {
+  font-size: 40px;
+}
+
+/* Limitamos el máximo ancho del contenerdor y lo mantenemos centrado
+*/
+.textCabeza {
+  padding: 4em 0em 4em 0em;
+  color: #085F62;
+}
+.textCabeza h2 {
+  font-size: 60px;
+  border-bottom: 15px double #70C573;
+  margin: 1em;
+}
+.textCabeza h3 {
+  font-size: 30px;
+}
+.textCabeza h4 {
+  font-size: 20px;
+  padding: 1.5em;
+}
+
+.tablas {
+  max-width: 1140px;
+  margin: 0px auto;
+  clear: both;
+  font-family: Arial, Georgia, Serif;
+}
+
+.tabla {
+  margin: 1em 0.5em 1.625em;
+  padding: 0.25em 0 2em;
+  background: #124329;
+  /* Color de fondo remplace por su favorito */
+  color: #f9f9f9;
+  text-align: center;
+  border: none;
+}
+
+@media (min-width: 40em) {
+  .tabla {
+    width: 30%;
+    float: left;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+  }
+
+  .scale {
+    z-index: 400;
+    -webkit-transform: scale(1.07);
+    -moz-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    -o-transform: scale(1.07);
+    transform: scale(1.07);
+  }
+}
+/* Efecto de zoom al pasar el mouse puede modificar la scala */
+/*.tabla:hover{
+  -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+       -o-transform: scale(1.2);
+          transform: scale(1.2);
+  background: $verdeClaro;
+}*/
+div.precio {
+  width: 100px;
+  height: 100px;
+  margin: 0px auto;
+  background: #70C573;
+  border-radius: 50%;
+  border: 10px solid #000000;
+  color: #000;
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #000;
+  font-weight: bold;
+}
+
+div.precio p {
+  margin: 30px 0px 0px 0px;
+  padding: 0px;
+}
+
+div.precio sup {
+  font-size: 50%;
+}
+
+div.precio span {
+  font-size: 12px;
+  color: #000000;
+  margin: 0px;
+  padding: 0px;
+}
+
+.titulo {
+  margin: 0.5em 0;
+  padding: 0.25em 0;
+  background: #70C573;
+  font-size: 250%;
+  color: #000;
+}
+
+.scale .titulo {
+  background: #ff8400;
+}
+
+.caracteristica {
+  margin: 0px auto;
+  padding: 0;
+  list-style-type: none;
+  color: #fefefe;
+  width: 95%;
+}
+
+.caracteristica li {
+  padding: 10px 0px;
+  border-bottom: 1px dotted #ccc;
+}
+
+.queHacemos {
+  background-color: #03A8E8;
+}
+
+.beneficio {
+  background-color: #085F62;
+}
+
+.comprar {
+  font-size: 25px;
+  color: #EBD671;
+  border: 5px solid #70C573;
+  border-bottom: none;
+}
+.comprar:hover {
+  font-size: 27px;
+  transition: 0.5s;
+}
+
+.yaSocio, .fondo {
+  background: #70C573;
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  font-family: "Lato", sans-serif;
+  display: block;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.loaded {
+  overflow-y: auto;
+}
+
+.main {
+  display: none;
+}
+
+.tl, .tr, .bl, .br {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(https://img.freepik.com/foto-gratis/hoja-helecho-cerca-fondo-naturaleza-bw_53876-103828.jpg?w=2000) no-repeat center center fixed #000;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+/* top left*/
+.tl {
+  top: 0;
+  top: -50%;
+  left: -50%;
+}
+
+/* top right*/
+.tr {
+  top: -50%;
+  left: 50%;
+}
+
+/* botton left*/
+.bl {
+  top: 50%;
+  left: 50%;
+}
+
+/* botton right*/
+.br {
+  top: 50%;
+  left: -50%;
+}
+
+.enter:after,
+.enter:hover:after,
+.enter, .enter:hover {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.enter {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-color: #2A2A2B;
+  background-color: rgba(17, 17, 17, 0.67);
+  z-index: 999999999;
+  text-align: center;
+  line-height: 100px;
+  text-decoration: none;
+  color: #FFF;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 0 15px 2px #000;
+  -moz-box-shadow: 0 0 15px 2px #000;
+  box-shadow: 0 0 15px 2px #000;
+}
+
+.enter:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  background-color: #3FB4BE;
+  background-color: rgba(0, 235, 255, 0.44);
+  z-index: 999999999;
+  text-align: center;
+  line-height: 80px;
+  text-decoration: none;
+  color: #FFF;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 0 15px 2px #000;
+  -moz-box-shadow: 0 0 15px 2px #000;
+  box-shadow: 0 0 15px 2px #000;
+}
+
+.enter:hover {
+  -webkit-box-shadow: 0 0 4px 4px #3FB4BE;
+  -moz-box-shadow: 0 0 4px 4px #3FB4BE;
+  box-shadow: 0 0 4px 4px #3FB4BE;
+}
+
+.enter:hover:after {
+  background-color: #2A2A2B;
+  background-color: rgba(17, 17, 17, 0.67);
+}
+
+.hideThis {
+  -webkit-box-shadow: 0 0 0 0 #3FB4BE;
+  -moz-box-shadow: 0 0 0 0 #3FB4BE;
+  box-shadow: 0 0 0 0 #3FB4BE;
+  opacity: 0;
+  z-index: -5;
+}
+
+/* Layout
+============================== */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  background-color: #000;
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 10px;
+  background-color: #333;
+}
+
+.yaSocio {
+  font: 100%/1.5 "lato", sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 40rem) {
+  .yaSocio {
+    font-size: 112%;
+  }
+}
+@media (min-width: 64rem) {
+  .yaSocio {
+    font-size: 120%;
+  }
+}
+.fondo {
+  background-color: #fff;
+  color: #555;
+}
+
+.containerSocio {
+  margin: 0 auto;
+  max-width: 53rem;
+  width: 90%;
+}
+
+/* Header
+================================== */
+.fondo {
+  background: url(https://img.freepik.com/foto-gratis/texturas-hojas-negras-abstractas-naturales-imagenes-blanco-negro-fondo-hojas-tropicales_512343-637.jpg?w=2000) no-repeat center center fixed #ecf0f1;
+  text-align: center;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+.intro {
+  margin: 2rem 0;
+}
+
+@media (min-width: 40rem) {
+  .intro {
+    margin: 4rem 0;
+  }
+}
+.clearfix .msj {
+  color: #fff;
+  padding: 0.4rem 0.6rem;
+  display: inline-block;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: #085F62;
+  background-color: rgba(129, 194, 129, 0.671);
+}
+
+.clearfix p {
+  color: #085F62;
+  margin: 0 auto;
+  background-color: rgba(129, 194, 129, 0.671);
+}
+
+/* Section
+========================================= */
+.words {
+  background: white;
+}
+
+section {
+  border-top: 1px solid #eee;
+  padding: 2rem 0;
+}
+
+section:first-of-type {
+  border-top: none;
+}
+
+@media (min-width: 40rem) {
+  section {
+    padding: 4rem 0;
+  }
+}
+/* Clearfix by Nicolas Gallagher
+========================================== */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.title {
+  padding: 1em;
+}
+
+.listaBen {
+  text-align: justify;
+}
+
 /*INDEX*/
 .presentacion {
   background-position: center;
@@ -236,10 +657,12 @@
   background-repeat: no-repeat;
   background-position: center center;
   padding: 4em;
+  margin-top: 0em;
 }
 
 .intro__nosotros {
   margin: 4em;
+  margin-top: 0em;
   text-align: center;
   background-color: #124329;
 }
@@ -531,6 +954,7 @@
 
 .productos {
   background-color: white;
+  align-items: center;
 }
 
 .cardProduct {
@@ -575,6 +999,7 @@
 }
 
 .gridContenedor {
+  padding: 0em;
   color: #fcfcfc;
   display: grid;
   grid-template-areas: "dona" "socio" "app";
@@ -641,128 +1066,6 @@
   transition: 0.5s;
 }
 
-.tablas {
-  display: none;
-}
-
-.error {
-  color: #124329;
-  margin-top: 7em;
-  text-align: center;
-}
-.error h2 {
-  font-size: 50px;
-}
-.error h3 {
-  font-size: 40px;
-}
-
-/* Limitamos el máximo ancho del contenerdor y lo mantenemos centrado
-*/
-.tablas {
-  max-width: 1140px;
-  margin: 0px auto;
-  clear: both;
-  font-family: Arial, Georgia, Serif;
-}
-
-.tabla {
-  margin: 1em 0.5em 1.625em;
-  padding: 0.25em 0 2em;
-  background: #0F1012;
-  /* Color de fondo remplace por su favorito */
-  color: #f9f9f9;
-  text-align: center;
-  border: none;
-}
-
-@media (min-width: 40em) {
-  .tabla {
-    width: 30%;
-    float: left;
-    -webkit-transition: all 0.25s;
-    -moz-transition: all 0.25s;
-    -ms-transition: all 0.25s;
-    -o-transition: all 0.25s;
-    transition: all 0.25s;
-  }
-
-  .scale {
-    z-index: 400;
-    -webkit-transform: scale(1.07);
-    -moz-transform: scale(1.07);
-    -ms-transform: scale(1.07);
-    -o-transform: scale(1.07);
-    transform: scale(1.07);
-  }
-}
-/* Efecto de zoom al pasar el mouse puede modificar la scala */
-.tabla:hover {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
-  background: #656565;
-}
-
-div.precio {
-  width: 100px;
-  height: 100px;
-  margin: 0px auto;
-  background: #FFF;
-  border-radius: 50%;
-  border: 10px solid #808080;
-  color: #000;
-  margin-top: 20px;
-  font-size: 24px;
-  line-height: 20px;
-  font-family: "Oswald", "Arial", sans-serif;
-  color: #ff8400;
-  font-weight: bold;
-}
-
-div.precio p {
-  margin: 30px 0px 0px 0px;
-  padding: 0px;
-}
-
-div.precio sup {
-  font-size: 50%;
-}
-
-div.precio span {
-  font-size: 12px;
-  color: #a1a7b0;
-  margin: 0px;
-  padding: 0px;
-}
-
-.titulo {
-  margin: 0.5em 0;
-  padding: 0.25em 0;
-  background: #b7b7b7;
-  font-size: 250%;
-  color: #000;
-}
-
-.scale .titulo {
-  background: #ff8400;
-}
-
-.caracteristica {
-  margin: 0px auto;
-  padding: 0;
-  list-style-type: none;
-  color: #fefefe;
-  width: 95%;
-}
-
-.caracteristica li {
-  padding: 10px 0px;
-  border-bottom: 1px dotted #ccc;
-}
-
 /*GENERAL CONFIGS*/
 * {
   padding: 0px;
@@ -791,6 +1094,14 @@ body {
 .donate:hover {
   transition: 1s;
   transform: rotate(720deg) scale(1.2);
+}
+
+.topbar {
+  text-align: center;
+  padding: 0.5em;
+  background-color: #EBD671;
+  color: #124329;
+  font-size: 15px;
 }
 
 .cabezera {
@@ -865,6 +1176,14 @@ footer nav ul li a {
     bottom: 20px;
     right: 30px;
     cursor: pointer;
+  }
+
+  .topbar {
+    text-align: center;
+    padding: 0.5em;
+    background-color: #EBD671;
+    color: #124329;
+    font-size: 10px;
   }
 
   .cabezera {
@@ -1276,6 +1595,13 @@ footer nav ul li a {
     height: 200px;
   }
 }
+.textCabeza {
+  padding: 2em 0em 2em 0em;
+}
+.textCabeza h2 {
+  font-size: 50px;
+}
+
 @media only screen and (max-width: 1200px) {
   /*Ayudanos.HTML*/
   .gridContenedor {

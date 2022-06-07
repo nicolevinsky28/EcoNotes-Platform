@@ -8,6 +8,13 @@
         right: 30px;
         cursor: pointer;
     }
+    .topbar{
+        text-align: center;
+        padding: 0.5em;
+        background-color: $amarillo;
+        color: $verdeOscuro;
+        font-size: 10px;
+    }
     .cabezera{
         text-align: center;
         flex-direction: column;
@@ -431,6 +438,15 @@ border-bottom: 2px solid var(--verde);
     }
 
 } 
+//textCabezera
+
+   .textCabeza{
+       padding: 2em 0em 2em 0em;
+       h2{
+           font-size: 50px;
+       }
+   }
+
 @media only screen and (max-width: 1200px){
       /*Ayudanos.HTML*/
 .gridContenedor{

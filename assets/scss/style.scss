@@ -2,13 +2,14 @@
 @import "base/mixins";
 @import "base/colorsYfonts";
 @import "base/maps";
+@import "component/socios";
 @import "component/index";
 @import "component/nosotros";
 @import "component/news";
 @import "component/campañas";
 @import "component/store";
 @import "component/ayudanos";
-@import "component/socios";
+
 
 
 
@@ -42,6 +43,13 @@ body{
         transition: 1s;
         transform: rotate(720deg) scale(1.2);
     }
+}
+.topbar{
+    text-align: center;
+    padding: 0.5em;
+    background-color: $amarillo;
+    color: $verdeOscuro;
+    font-size: 15px;
 }
 .cabezera{
     text-align: center;
