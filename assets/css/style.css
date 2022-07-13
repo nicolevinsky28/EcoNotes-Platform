@@ -841,6 +841,192 @@ section:first-of-type {
   color: #124329;
 }
 
+.toggleContenedor {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+.toggleContenedor .toggle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #085F62;
+  top: 0px;
+  left: 0px;
+  border-radius: 30px;
+  width: 90px;
+  height: 50px;
+  transition: 0.3s;
+}
+.toggleContenedor .activo {
+  background-color: aquamarine;
+}
+.toggleContenedor .activo .toggleButton {
+  left: 45px;
+}
+.toggleContenedor .toggleButton {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 5px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.toggleContenedor .toggleText {
+  position: relative;
+  padding-left: 1em;
+  font-size: 25px;
+}
+.toggleContenedor .toggleA {
+  padding-left: 0px;
+  padding-right: 1em;
+}
+
+.bodyNewView {
+  text-align: center;
+}
+
+.newContentHead {
+  background-color: #70C573;
+  padding: 5em 3em 5em 3em;
+}
+.newContentHead #titleNew {
+  font-size: 30px;
+}
+.newContentHead #fechaNew {
+  padding-top: 2em;
+  font-size: 16px;
+}
+
+#fotoContent #bannerNew {
+  height: 300px;
+  width: 100%;
+}
+
+#bodyNew {
+  padding-top: 1em;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.shareTabs textarea {
+  resize: none;
+  padding: 1em;
+}
+.shareTabs .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.shareTabs .svg-inline--fa {
+  vertical-align: -0.2em;
+}
+.shareTabs .rounded-social-buttons {
+  text-align: center;
+}
+.shareTabs .rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.shareTabs .rounded-social-buttons .social-button:hover, .shareTabs .rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.shareTabs .rounded-social-buttons .fa-twitter, .shareTabs .fa-facebook-f, .shareTabs .fa-linkedin, .shareTabs .fa-youtube, .shareTabs .fa-instagram {
+  font-size: 25px;
+}
+.shareTabs .rounded-social-buttons .social-button.facebook {
+  background: #3b5998;
+}
+.shareTabs .rounded-social-buttons .social-button.facebook:hover, .shareTabs .rounded-social-buttons .social-button.facebook:focus {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
+}
+.shareTabs .rounded-social-buttons .social-button.twitter {
+  background: #55acee;
+}
+.shareTabs .rounded-social-buttons .social-button.twitter:hover, .shareTabs .rounded-social-buttons .social-button.twitter:focus {
+  color: #55acee;
+  background: #fefefe;
+  border-color: #55acee;
+}
+.shareTabs .rounded-social-buttons .social-button.linkedin {
+  background: #007bb5;
+}
+.shareTabs .rounded-social-buttons .social-button.linkedin:hover, .shareTabs .rounded-social-buttons .social-button.linkedin:focus {
+  color: #007bb5;
+  background: #fefefe;
+  border-color: #007bb5;
+}
+.shareTabs .rounded-social-buttons .social-button.youtube {
+  background: #bb0000;
+}
+.shareTabs .rounded-social-buttons .social-button.youtube:hover, .shareTabs .rounded-social-buttons .social-button.youtube:focus {
+  color: #bb0000;
+  background: #fefefe;
+  border-color: #bb0000;
+}
+.shareTabs .rounded-social-buttons .social-button.instagram {
+  background: #125688;
+}
+.shareTabs .rounded-social-buttons .social-button.instagram:hover, .shareTabs .rounded-social-buttons .social-button.instagram:focus {
+  color: #125688;
+  background: #fefefe;
+  border-color: #125688;
+}
+
+section.articles {
+  width: 60%;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 0.1em;
+}
+
+.news aside {
+  background-color: #ebebeb;
+  float: left;
+  width: 35%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 1em;
+}
+
+.news aside header {
+  text-align: center;
+}
+
 /*CAMPAÑAS.HTML*/
 .evento {
   background: url(../scr/media/img/bannerCampaña.jpg);
@@ -1593,6 +1779,85 @@ footer nav ul li a {
   .ilusracionAyuda {
     width: 200px;
     height: 200px;
+  }
+
+  .toggleContenedor {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 2em;
+  }
+  .toggleContenedor .toggle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #085F62;
+    top: 0px;
+    left: 0px;
+    border-radius: 30px;
+    width: 90px;
+    height: 50px;
+    transition: 0.3s;
+  }
+  .toggleContenedor .activo {
+    background-color: aquamarine;
+  }
+  .toggleContenedor .activo .toggleButton {
+    left: 45px;
+  }
+  .toggleContenedor .toggleButton {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .toggleContenedor .toggleText {
+    position: relative;
+    padding-left: 1em;
+    font-size: 15px;
+    color: #085F62;
+  }
+  .toggleContenedor .toggleA {
+    padding-left: 0px;
+    padding-right: 1em;
+  }
+
+  .news {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0.5em;
+  }
+
+  section.articles {
+    width: 100%;
+    float: none;
+    padding: 0em;
+    margin-bottom: 1em;
+  }
+
+  .news aside {
+    background-color: #ebebeb;
+    float: none;
+    position: relative;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0em;
+  }
+
+  .news aside header {
+    text-align: center;
   }
 }
 .textCabeza {
