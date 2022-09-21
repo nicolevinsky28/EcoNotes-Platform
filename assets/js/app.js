@@ -1,4 +1,6 @@
 
+
+
 //news.html
 
 let idNew = localStorage.getItem("noticia")
@@ -79,10 +81,11 @@ let divNews = document.getElementsByClassName("newContainer")
     })
 }
    
-
+let repeticionFuncion = 0
 let noticiasR = noticias.reverse()
-   const obtenerNoticiasEco = () =>{
-    document.querySelector(".noticias").innerHTML = ``
+    if(repeticionFuncion = 0){
+    const obtenerNoticiasEco = () =>{
+    document.getElementById("noticias").innerHTML = ``
     noticiasR.forEach( (noticia) =>{
         let noticiaview = document.querySelector(".noticias")
         noticiaview.innerHTML +=`
@@ -97,8 +100,7 @@ let noticiasR = noticias.reverse()
             </ul>
         </div>
     </div>`
-
     })
-
-   }
+   }}
    obtenerNoticiasEco()
+   

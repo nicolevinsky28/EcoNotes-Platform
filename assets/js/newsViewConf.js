@@ -5,6 +5,10 @@ const fechaNew = document.getElementById("fechaNew")
 const bannerNew = document.getElementById("fotoContent")
 const bodyNew = document.getElementById("bodyNew")
 
+
+
+
+
 console.log(noticias[idNew].titulo)
 
 const cargaContenido = () =>{
