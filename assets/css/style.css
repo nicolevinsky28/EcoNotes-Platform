@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+
 .ramas, .cutSection, .content__list, .quienesSomos, .presentacion {
   display: flex;
   flex-direction: column;
@@ -19,6 +20,11 @@
 */
 .fondos {
   background-color: #ddf1de;
+}
+
+.contentTextPresentacion{
+  padding: 1.5em;
+  background: linear-gradient(to bottom, #ffffff6e, rgba(16, 71, 48, 0.562));
 }
 
 .error {
@@ -492,7 +498,7 @@ section:first-of-type {
   margin-left: 8em;
   margin-top: 4em;
 }
-.content__flex video {
+.content__flex .imgPresentacion {
   margin: 2em;
 }
 .content__flex img {
@@ -1663,22 +1669,30 @@ footer nav ul li a {
     background-repeat: no-repeat;
     background-position: center center;
     padding: 1em;
+    padding-top: 2em;
     display: flex;
     flex-direction: column;
     border-bottom: 15px double #085F62;
   }
   .presentacion h2 {
-    padding-top: 2em;
-    font-size: 50px;
-    margin-bottom: 1em;
+    padding-top: 0em;
+    font-size: 48px;
+    padding: 0.5em;
     height: 100%;
+    background: linear-gradient(to right,  #03300391, rgba(39, 121, 19, 0.562));
+    
+  }
+
+  .contentTextPresentacion{
+    padding: 0em;
+    background: #ffffff00;
   }
 
   .quienesSomos {
     display: flex;
     flex-direction: column;
   }
-  .quienesSomos video {
+  .quienesSomos .imgPresentacion {
     display: none;
   }
   .quienesSomos h3 {
