@@ -1,0 +1,115 @@
+.bannerNews{
+    text-align: center;
+    padding: 4em;
+    @include border(#085F62 double 1em);
+
+    h2{
+        padding-top: 1em;
+        font-size: 40px;
+        color: $celeste;
+    }
+
+    h3{
+
+        color: $verdeClaro;
+    }
+    
+}
+.noticias{
+    margin: 2em 5em 2em 5em;
+}
+.newContainer{
+    @extend %flexRow;
+    justify-content: space-around;
+    margin-top: 4em;
+    border: 8px $teal solid;
+    padding: 0.5em;
+    background-color: lighten($celeste, 51%);
+
+    img{
+        border: $verdeClaro 8px solid;
+        border-radius: 5px;
+    }
+
+    &:hover{
+        transform: scale(1.03);
+        transition: 0.5s;
+    }
+}
+.newContent{
+    padding-left: 2em;
+}
+.titleNew{
+    padding-bottom: 1em;
+}
+.botonera{
+    margin-top: 1em;
+
+    li{
+        display: inline;
+        padding: 1em;
+
+        a{
+            text-decoration: none;
+            color: $verdeClaro;
+            @include border(2px solid $verdeClaro);
+        }
+    }
+    .fecha{
+        margin: 1em;
+        color: $verdeOscuro;
+    }
+}
+
+.toggleContenedor{
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 2em;
+
+    .toggle{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background-color: #085F62;
+        top: 0px;
+        left: 0px;
+        border-radius: 30px;
+        width: 90px;
+        height: 50px;
+        transition: 0.3s;
+
+    }
+    .activo{
+        background-color: aquamarine;
+        .toggleButton{
+            left: 45px;
+        }
+    }
+    .toggleButton{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 5px;
+        left: 5px;
+        width: 40px;
+        height: 40px;
+        background: white;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .toggleText{
+        position: relative;
+        padding-left: 1em;
+        font-size: 25px;
+
+    }
+    .toggleA{
+        padding-left: 0px;
+        padding-right: 1em;
+    }
+}

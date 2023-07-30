@@ -1,0 +1,63 @@
+/*STORE.HTML*/
+
+.bannerStore{
+    text-align: center;
+    padding: 4em;
+    @include border( #085F62 double 1em);
+
+    h2{
+        padding-top: 1em;
+        font-size: 40px;
+        color: $celeste;
+    }
+
+    h3{
+
+        color: $verdeClaro;
+    }
+}
+.productos{
+    background-color: lighten($verdeClaro, 50%);
+    align-items: center;
+}
+.cardProduct{
+    width: 300px;
+    border: 5px $teal solid;
+    padding: 3em;
+    display: inline-block;
+    margin: 2em;
+    background-color: $verdeClaro;
+}
+
+.cardProduct__image{
+    width: 100%;
+}
+.cardProduct__des{
+
+    line-height: 20px;
+    color: $verdeOscuro ;
+}
+
+.cardProduct__price{
+    margin-top: 15px;
+}
+
+.cardProduct__text{
+    margin-top: 10px;
+    margin-bottom: 5em;
+}
+
+.cardProduct__button{
+    text-decoration: none;
+    font-size: 25px;
+    background-color: $teal;
+    color: #fcfcfc;
+    padding: 1em;
+    border-radius: 15px;
+
+    &:hover{
+        background-color: lighten($verdeClaro, 50%);
+        color: $teal;
+        transition: 0.5s;
+    }
+}

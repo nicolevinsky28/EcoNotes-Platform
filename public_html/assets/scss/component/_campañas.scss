@@ -1,0 +1,95 @@
+/*CAMPAÑAS.HTML*/
+
+.evento{
+    background: url(../scr/media/img/bannerCampaña.jpg);
+    height: 100%;
+    background-size:     cover;                      /* <------ */
+   background-repeat:   no-repeat;
+   background-position: center center;
+   padding: 4em;
+   margin-bottom: 2em;
+
+   .eventoContent{
+       text-align: center;
+       h2{
+           font-size: 70px;
+           padding: 1em 0em 1em 0em;
+           color: darken($teal , 10%)
+       }
+       h4{
+           text-align: justify;
+           font-size: 40px;
+           color: $blanco;
+           background-color: #12432994;
+           padding: 1em;
+       }
+
+       a{
+           text-decoration:none ;
+           font-size: 30px;
+           background-color: $celeste;
+           padding: 0.5em;
+           color: darken($teal , 10%);
+
+           &:hover{
+               background-color: darken($teal , 10%);
+               color: $celeste;
+               transition: 0.5s;
+           }
+       }
+   }
+   .spacemargin{
+    padding: 1em 0em 4em 0em;
+}
+}
+
+
+.videoPrincipal{
+    @extend %flexRow;
+    justify-content: space-around;
+    margin: 3em 3em 10em 3em;
+
+    h2{
+        font-size: 40px;
+        color: $teal;
+        padding-bottom: 1em;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+.videoCampaña{
+    width: 200vh;
+    margin-right: 2em;
+    }
+.portadaCampania{
+    margin: 3em 1em 1em 1em;
+    @extend %flexRow;
+    justify-content: space-around;
+    h2{
+        margin-top: 1em;
+        font-size: 60px;
+    }
+}
+.pUno{
+    color: #EA7128;
+}
+.pDos{
+    color: #45737E;
+}
+.pTres{
+    color: #FFC811;
+}
+.pCuatro{
+    color: #3AA4A4;
+}
+
+.cel{
+    display: none;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $verdeClaro;
+}

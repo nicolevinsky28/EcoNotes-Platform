@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eco notes Store es una tienda ecologica con productos aliados al medio ambiente con el fin de fomentar los eco-productos">
+    <meta name="keywords" content="eco notes store, tienda ecologica, productos ecologicos, anotadores, biodegradables, sustentables, productos, tienda organica, ecologicos, tienda biodegradable, tienda verde">
+    <title>Store | Eco Notes</title>
+    <link rel="icon" type="image/x-icon" href="../media/img/favicon/favicon256px.png"/>
+    <meta property="og:title" content="Eco Notes - Luchando contra el cambio climatico"/>
+    <meta property="og:description" content="Eco notes es una organización que planta arboles nativos y lucha contra el cambio climático a partir de servicios, aplicaciones, arte y movimientos ecologicos"/>
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <meta property="og:image" content="https://res.cloudinary.com/ndl/image/upload/v1651512927/econotes-logoapp_1_tnlrgd.png"/>
+
+
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body class="storeTab">
+
+    <div class="topbar" >
+        <h3><a href="../subpaginas/asociate.html" >¡Ahora te podés asociar a Eco Notes y recibir beneficios únicos!</a></h3>
+    </div>
+    <header class="cabezera">
+        <div class="cabezera__visual">
+            <a href="index.html"><img class="cabezera__visualImg" src="../../media/img/logo.png" alt="Logo Eco Notes" width="50" height="50"></a>
+           
+            <h1>ECO NOTES</h1>
+        </div>
+        <nav class="cabezera__menu">
+            <ul>
+                <li><a href="../../../../index.html">Inicio</a></li>
+                <li><a href="../nosotros.html">Nosotros</a></li>
+                <li><a href="../ayudanos.html">Ayudanos</a></li>  
+                <li><a href="../news.html">Programas</a></li>
+                <li><a href="../campañas.html">Voluntariado</a></li>
+                <li><a href="../indexStore.html">Store</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section class="topStore">
+        <h1 id="titulo" class="tituloStore">Eco Notes Store</h1>
+        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+    </section>
+
+
+
+    <h2 id="textWelcome"></h2>
+    <main id="contenedor-productos">
+
+    </main>
+
+    <section>
+        <div id="iniciar-sesion">
+            <img src="../../media/img/logoStore.png" class="logoStore" alt="Logo eco notes store" width="150px" height="150px">
+            <h2 class="alertInicio">Ingresa tu nombre para entrar a la tienda </h2>
+            <p class="textInicio">Tu nombre se guardara para la proxima vez que ingreses</p>
+            <form id="register-form"> 
+                <input id="user" type="text" placeholder="  Ingrese su nombre" value=""/>
+                <input id="rgstr_btn" type="submit" value="Ingresar" onClick="store()"/> 
+            </form>
+        </div>
+    </section>
+
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
+                <!-- <div class="productoEnCarrito">
+                    <p>Buzo 1</p>
+                    <p>Precio: $1200</p>
+                    <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+                </div> -->
+            </div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <button id="vaciar-carrito" class="boton-agregar"">Vaciar carrito</button>
+            <button id="comprar" class="boton-agregar">Continuar con la compra</button>
+        </div>
+    </div>
+
+
+
+    <script defer src="stock.js"></script>
+    <script defer src="modal.js"></script>
+    <script defer src="app.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

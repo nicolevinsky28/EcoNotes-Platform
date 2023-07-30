@@ -1,0 +1,574 @@
+/*MEDIA QUERY*/
+@media only screen and (max-width: 960px){
+    /*General*/
+    .donate{
+        position: fixed;
+        z-index: 9999999;
+        bottom: 20px;
+        right: 30px;
+        cursor: pointer;
+    }
+    .topbar{
+        text-align: center;
+        padding: 0.5em;
+        background-color: $amarillo;
+        color: $verdeOscuro;
+        font-size: 10px;
+    }
+    .cabezera{
+        text-align: center;
+        flex-direction: column;
+    }
+    .cabezera__visual{
+        justify-content: center;
+
+        h1{
+            font-size: 25px;
+            color: $blanco;  
+            margin: 0.7em 0.1em 0.5em 0.1em;
+        }
+    }
+    
+    .cabezera__visualImg{
+        margin: 0.5em 1em 0.5em 2em;
+        height: 35px;
+        width: 35px;
+    }
+    .cabezera__menu{
+        display: flex;
+
+        ul{
+            justify-content: center;
+            margin: 0.5em ;
+            flex-wrap: wrap;
+
+            li{
+
+                a{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .logoFooter{
+        display: none;
+    }
+    footer {
+        background-color:#124329;
+        margin-top: 1em;
+        padding: 3em 1em 1em 1em;
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+
+            ul {
+                list-style: none;
+                text-align: center;
+
+                li {
+                    padding: 0.5em;
+                  }
+              }
+            
+          }
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  /*Index.HTML*/
+  .presentacion{
+    background-position: center;
+    background: url(../scr/media/img/presentacionFoto.jpg);
+    height: 100%;
+    background-size:     cover;                      /* <------ */
+   background-repeat:   no-repeat;
+   background-position: center center;
+   padding: 1em;
+   display: flex;
+   flex-direction: column;
+   border-bottom: 15px double #085F62;
+
+   h2{
+    padding-top: 2em;
+    font-size: 50px;
+    margin-bottom: 1em;
+    height: 100%;
+}
+}
+.quienesSomos{
+    display: flex;
+    flex-direction: column;
+
+    video{
+        display: none;
+    }
+
+    h3{
+        margin-bottom: 3em;
+        font-size: 30px;
+        background-color: #ffffff91;
+        color: #124329;
+        padding: 0.5em;
+    }
+}
+.photoText__content{
+    display: flex;
+    justify-content: flex-end;
+}
+.content__flex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-left: 1em;
+    margin-top: 4em;
+    align-items: center;
+
+    img{
+        margin-top: 5em;
+        height: 200px;
+        width: max-content;
+        padding-bottom: 1em;
+    }
+
+    h2{
+        font-size: 50px;
+        padding-bottom: 1em;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+}
+
+.content__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    ul{
+        margin-left: 1em;
+        margin-bottom: 8em;
+        font-size: 25px;
+
+        li{
+            list-style:square;
+            color: #085F62;
+            padding-top: 1.1em;
+        }
+    }
+}
+
+.cutSection{
+    text-align: center;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        padding-bottom: 0.5em;
+        font-size: 70px;
+        color: #085F62;
+    }
+
+    h4{
+        padding-bottom: 3em;
+        font-size: 25px;
+        color: black;
+    }
+}
+
+.infoArbol {
+    flex-direction: column;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 1.5em;
+  }
+  
+  .arboles, .carbono, .ingresos, .descarga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .arboles h2, .carbono h2, .ingresos h2, .descarga h2 {
+    margin-top: 1em;
+    padding: 0.5em;
+    border-bottom: 2px #70C573 solid;
+    color:#085F62;
+  }
+  .arboles p, .carbono p, .ingresos p, .descarga p {
+    margin-top: 0.5em;
+    font-size: 27px;
+    color: #70C573;
+    padding-bottom: 2em;
+  }
+
+  .grid-gallery{
+      margin: 3em 1em 3em 1em;
+  }
+
+  /*NOSOTROS.HTML*/
+
+  .responsiveAlert{
+    padding-top: 3em;
+    display:flex ;
+    font-size: 20px;
+    color: #085F62;
+
+}
+
+.intro{
+background: url(../scr/media/img/bannerNosotrosResponsive.jpg);
+height: 100%;
+background-size:     cover;                      /* <------ */
+background-repeat:   no-repeat;
+background-position: center;
+padding: 1em;
+}
+.intro__nosotros{
+margin: 3em 0.5em 3em 0.5em;
+
+h2{
+    padding:1em;
+    font-size: 40px;
+    color:#fcfcfc;
+    }
+
+    p{
+        font-size: 25px;
+        padding-left: 1em;
+        padding-right: 1em;
+        text-align: center;
+        }
+}
+
+.divisiones h2{
+padding-top: 2.5em;
+font-size: 50px;
+}
+
+
+.ramas > div {
+font-size: 15px;
+}
+
+.historia{
+margin: 1em;
+display: flex;
+}
+.historia__content h2{
+padding-top: 2.5em;
+font-size: 50px;
+border-bottom: 10px double #085F62;
+color: #70C573;
+display: flex;
+}
+.content__text{
+margin-top: 3em;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+align-items: center;
+
+p{
+    padding-top: 10px;
+    font-size: 20px;
+    padding: 2em 1em 2em 1em;
+    }
+}
+
+
+/*STORE.HTML*/
+
+.bannerStore{
+padding: 1em;
+}
+.cardProduct{
+width: 300px;
+border: 5px teal solid;
+padding: 1em 1em 3em 1em;
+display: inline-block;
+margin: 2em 1em 2em 1em;
+align-items: center;
+}
+.productos{
+display: flex;
+flex-direction: column;
+align-items: center; 
+}
+/*CAMPAÑAS.HTML*/
+.evento{
+    padding: 1em 1em 3em 1em;
+
+    .eventoContent{
+        h2{
+            font-size: 50px;
+        }
+        h4{
+            font-size:25px;
+        }
+    }
+}
+
+.videoPrincipal{
+flex-direction: column;
+margin: 3em 1em 10em 1em;
+align-items: center;
+text-align: center;
+
+h2{
+    font-size: 30px;
+    padding: 1em;
+}
+p{
+    text-align: justify;
+    padding: 0em 1em 1em 1em;
+}
+}
+.videoCampaña{
+width: max-content;
+margin-right: 0em;
+
+}
+.video__text{
+margin-top: 3em;
+}
+
+.portadaCampania{
+margin: 3em 1em 1em 1em;
+flex-direction: column;
+align-items: center;
+
+h2{
+    margin-top: 1em;
+    font-size: 40px;
+    }
+
+    img{
+        width: 300px;
+        height: 300px;
+        }
+}
+
+.cel{
+    display: block;
+}
+
+/*NEWS.HTML*/
+
+.bannerNews{
+padding: 1em;
+}
+
+.noticias{
+margin: 2em 1em 2em 1em;
+}
+.newContainer{
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+align-items: center;
+margin-top: 4em;
+margin-bottom: 4em;
+padding-bottom: 2em;
+border-bottom: 10px #70C573 double;
+
+img{
+    border-radius: 15px;
+    width: max-content;
+    margin-bottom: 2em;
+    }
+}
+.newContent{
+padding-left: 0em;
+}
+.titleNew{
+padding-bottom: 1em;
+}
+.botonera{
+margin-top: 1em;
+}
+.botonera li{
+display: inline;
+padding: 1em;
+
+.fecha{
+    padding-top: 2em;
+}
+ a{
+    text-decoration: none;
+color: var(--verde);
+border-bottom: 2px solid var(--verde); 
+ }
+}
+
+.fecha{
+    padding-top: 3em;
+}
+      /*Ayudanos.HTML*/
+      .gridContenedor{
+        text-align: center;
+    }
+    .CTA{
+        padding: 0px;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+    .CTA p{
+        text-align:center;
+        padding: 1em 1em 2em 1em;
+    }
+    .CTA a{
+        margin: 2em;
+    }
+    .responsiveGrid{
+        flex-direction: column;  
+        text-align: center;
+        padding: 1em 1em 3em 1em;
+        align-items: center;
+    }
+    .ilusracionAyuda{
+        width: 200px;
+        height: 200px;
+    }
+    .toggleContenedor{
+        position: relative;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-top: 2em;
+    
+        .toggle{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            background-color: #085F62;
+            top: 0px;
+            left: 0px;
+            border-radius: 30px;
+            width: 90px;
+            height: 50px;
+            transition: 0.3s;
+    
+        }
+        .activo{
+            background-color: aquamarine;
+            .toggleButton{
+                left: 45px;
+            }
+        }
+        .toggleButton{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: 5px;
+            left: 5px;
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .toggleText{
+            position: relative;
+            padding-left: 1em;
+            font-size: 15px;
+            color: $teal;
+        }
+        .toggleA{
+            padding-left: 0px;
+            padding-right: 1em;
+        }
+    }
+    //NEWS VIEW
+    .news{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0.5em;
+    }
+    section.articles {
+        width: 100%;
+        float: none;
+        padding: 0em ;
+        margin-bottom: 1em;
+      }
+      
+      .news aside {
+        background-color: #ebebeb;
+        float: none;
+        position: relative;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 0em;
+      }
+      
+      .news aside header {
+        text-align: center;
+      }
+} 
+//textCabezera
+
+   .textCabeza{
+       padding: 2em 0em 2em 0em;
+       h2{
+           font-size: 50px;
+       }
+   }
+
+@media only screen and (max-width: 1200px){
+      /*Ayudanos.HTML*/
+.gridContenedor{
+    text-align: center;
+}
+.CTA{
+    padding: 0px;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+.CTA p{
+    text-align:center;
+    padding: 1em 1em 5em 1em;
+    font-size: 25px;
+    text-align: justify;
+}
+.CTA a{
+    margin: 2em;
+}
+.responsiveGrid{
+    flex-direction: column;  
+    text-align: center;
+    padding: 1em 1em 3em 1em;
+    align-items: center;
+}
+.ilusracionAyuda{
+    margin-top: 2em;
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    
+}
+@media only screen and (max-width: 800px){
+    .ilusracionAyuda{
+        margin-top: 2em;
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        
+    }
+}
+}
+@media only screen and (max-width: 601px){
+    .desk{
+        display: none;
+    }
+}
